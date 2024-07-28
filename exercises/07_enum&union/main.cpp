@@ -36,6 +36,16 @@ ColorEnum convert_by_pun(Color c) {
     };
 
     TypePun pun;
+    
+    if(c == Color::Red){
+        pun.c = Color::Red;
+    }else if(c == Color::Green){
+        pun.c = Color::Green;
+    }else if(c == Color::Yellow){
+        pun.c = Color::Yellow;
+    }else if(c == Color::Blue){
+        pun.c = Color::Blue;
+    }
     // TODO: 补全类型双关转换
 
     return pun.e;
